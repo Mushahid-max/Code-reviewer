@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.left, .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+.left {
+  background-color: black;
+  position: relative;
+}
+.code , .code pre, .code pre code{
+ height: 100%;
+ width: 100%;
+ margin: 0%;
+ border-radius: 0.5rem;
+ background-color: #2b2424;
+}
+
+.left .review {
+  background-color: rgb(164, 164, 212);
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+.right {
+  background-color: #2b2424;
+  padding: 1rem;
+  overflow: auto;          
+  height: 100%;           
+  border-radius: 0.7rem;   
+  color: #fff;             
+  font-family: 'Fira Code', monospace; 
+  white-space: pre-wrap;   
+}
+
